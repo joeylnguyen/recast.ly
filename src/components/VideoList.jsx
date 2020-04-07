@@ -3,7 +3,8 @@ import VideoListEntry from './VideoListEntry.js';
 var VideoList = (props) => (
   //  Map over the array of exampleData to create a List Entry for every object in the data set
   <div className="video-list">{props.videos.map((video) => (
-    <VideoListEntry video={video}/>
+    // Pass in onClickPlayVideo as prop
+    <VideoListEntry video={video} onClickPlayVideo={props.onClickPlayVideo}/>
   ))}
   </div>
 );
