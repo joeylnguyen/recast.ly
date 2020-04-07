@@ -7,7 +7,7 @@ var VideoListEntry = (props) => (
     </div>
     <div className="media-body">
       {/* Pass in tiltle and description */}
-      <div className="video-list-entry-title">{props.video.snippet.title}</div>
+      <div className="video-list-entry-title" onClick={() => onClickPlayVideo(props.video)}>{props.video.snippet.title}</div>
       <div className="video-list-entry-detail">{props.video.snippet.description}</div>
     </div>
   </div>
